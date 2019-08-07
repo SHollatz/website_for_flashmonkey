@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="flashmonkey, flash card generator">
+  <meta name="keywords" content="flashmonkey, creative note taking, multimedia flash cards">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+  <meta name="author" content="Sabine Hollatz">
+  <link rel="icon" href="./images/FlashMonkey_logo.png">
+  <title>Flash Monkey</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="header_content">
+      <a href="#home"><img id="home-logo" alt="icon" src="./images/flash-astronaut-grey-150.png"><span
+          id="company_name">FlashMonkey</span></a>
+      <nav class="navigation">
+        <a href="#" id="link_demo">Demo</a>
+        <a href="#" id="link_signIn">Sign In</a>
+      </nav>
+    </div>
+  </header>
+  <br class="clearfloat">
+
+  <main>
+    <div id="demo_modal" class="modal">
+      <div class="modal_content">
+        <span class="close" id="close_demo">&times;</span>
+        <!-- <img class="clearfloat" src="images/flash-astronaut-grey-150.png"> -->
+        <p>Sound coming soon!</p>
+        <video width="800" controls>
+          <source src ="./images/GetStarted.mp4">
+        </video>
+      </div>
+    </div>
+    
+    <div id="signIn_modal" class="modal">
+      <div class="modal_content" id="signIn_modal_content">
+        <span class="close" id="close_signIn">&times;</span>
+        <form class="clearfloat" id="signIn_form">
+          <div class="form-group">
+            <label for="SignInEmail">Email address</label>
+            <input type="SignInEmail" class="form-control" id="SignInEmail" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone
+              else.</small>
+          </div>
+          <div class="form-group">
+            <label for="SignInPassword">Password</label>
+            <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary" id="signin_submit">Submit</button>
+            <a href="#" id="link_signUp">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="signUp_modal" class="modal">
+      <div class="modal_content">
+        <span class="close" id="close_signUp">&times;</span>
+        <form class="clearfloat">
+            <div class="form-group">
+                <label for="inputFirstName">First Name</label>
+                <input type="firstName" class="form-control" id="inputFirstName" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                  <label for="inputLastName">Last Name</label>
+                  <input type="lastName" class="form-control" id="inputLastName" placeholder="Last Name">
+                </div>
+          <div class="form-group">
+            <label for="inputEmail1">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone
+              else.</small>
+          </div>
+          <div class="form-group">
+              <label for="inputUserName">User Name</label>
+              <input type="userName" class="form-control" id="inputUserName" placeholder="User Name">
+            </div>
+          <div class="form-group">
+            <label for="inputPassword1">Password</label>
+            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword2">Retype Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Retype Password">
+          </div>
+          <button type="submit" class="btn btn-primary" id="signup_submit">Submit</button>
+          <button id="cancel_btn" type="cancel" class="btn btn-primary">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <section>
+      <div class="main_content">
+        <div id="slogan_container">
+          <span id="slogan_head">Finally!</span>
+          <p class="slogan"> The advanced learning tool the way you need it</p>
+        </div>
+        <div id="animation_container">
+          <div class="dot"></div>
+          <div class="rectangle"></div>
+        </div>
+      </div>
+    </section>
+
+    <section >
+      <div id="about_content" class="sub_content clearfloat">
+        <h2>Simple, Flexible, Genius</h2>
+        <p id="about_app">
+          FlashMonkey lets you create flashcards that fit any specific information you are interested in. You can use
+          all kinde of media, including video, audio, screenshots, graphs, etc. Use your cards for memorizing or for
+          testing your knowledge.
+          FlashMonkey generates an automatic test based off these cards that adjust as you progress making correct or
+          incorrect choices.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div id="faqs_content" class="sub_content">
+        <h2>FAQs</h2>
+        <ul id="about_faqs">
+          <li>
+            <h3>Which subjects does FlashMonkey support?</h3>
+            <p class="answer">There are no limits!</p>
+          </li>
+          <br>
+          <li>
+            <h3>Can I use FlashMonkey on my phone?</h3>
+            <p class="answer">Of course!</p>
+          </li>
+          <br>
+          <li>
+            <h3>Can I include links?</h3>
+            <p class="answer">Yes. Make sure you are connected to the Internet when you open them.</p>
+          </li>
+          <br>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div id="contact_content" class="sub_content">
+        <h2>Get in Touch!</h2>
+        <p id="about_contact">Thank you for your interest. If you have questions or would like to contribute, please
+          feel free to connect with me. <br><br>
+          <a id="my_email" href="mailto:flash@flashmonkey.co"><i class="fas fa-paper-plane"></i>my_email</a>
+          <a href="https://github.com/runnermann/FlashMonkey_SNAPSHOT_09" target='_blank' rel="noopener noreferrer"><i
+              class="fab fa-github-square"></i>GitHub</a>
+          <a href="https://www.linkedin.com/company/iooily/" target='_blank' rel="noopener noreferrer"><i
+              class="fab fa-linkedin"></i>LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="copyright">
+      Copyright &copy;
+    </div>
+    <a href="#faqs">FAQs</a>
+    <a href="#demo">Demo</a>
+    <!-- <a id="my_email" href="mailto:deb@ztallohs@gmail.com">Contact</a> -->
+    <a href="">Contact</a>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='./javascript/viewport.js' type='text/javascript'></script>
+  <script src='./javascript/modal.js' type='text/javascript'></script>
+  <script src='./javascript/user.js' type='text/javascript'></script>
+</body>
+
+</html>
