@@ -5,8 +5,9 @@ FlashMonkey is an interactive and multi-media learning application developed by 
 * Database: MySQL, for encrypted user access data
 * Server: Node.js (npm packages bcrypt, express, mysql, sequelize)
 * CSS, HTML5, JavaScript
+* Deployed on Heroku
 
-## Online Version
+## Online
 https://flashmonkey-user-web.herokuapp.com/
 
 ## under current development:
